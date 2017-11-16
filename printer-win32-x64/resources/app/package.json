@@ -1,0 +1,27 @@
+{
+  "name": "print_application",
+  "version": "1.0.0",
+  "description": "Print Server",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "electron-packager": "electron-packager . print_server --platform=darwin  --overwrite=force",
+    "electron-packager-all": "electron-packager . print_server --all  --overwrite=force",
+    "rebuild": "electron-rebuild"
+  },
+  "author": "Volodymyr Betin",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.7.9",
+    "electron-rebuild": "^1.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "electron-config": "^1.0.0",
+    "import-export": "^1.0.1",
+    "node-thermal-printer": "^1.1.1",
+    "serialport": "^6.0.4",
+    "socket.io": "1.7.x",
+    "vue": "^2.5.3"
+  }
+}
